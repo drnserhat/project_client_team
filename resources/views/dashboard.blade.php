@@ -18,7 +18,7 @@
                             <form action="{{ route('projects.store') }}" method="POST">
                                 @csrf
                                 <div>
-                                    <x-input-label for="project_name" :value="__('Proje Adı')" />
+                                    <x-input-label style="color:white" for="project_name" :value="__('Proje Adı')" />
                                     <x-text-input id="project_name" class="block mt-1 w-full" type="text" name="project_name" required autofocus />
                                 </div>
                                 <x-primary-button class="mt-4">
@@ -31,11 +31,11 @@
                     {{-- Join Project Form --}}
                     <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm rounded-lg">
                         <div class="p-6">
-                            <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-4">Bir Projeye Katıl</h3>
+                            <h3 class="text-lg font-medium text-gray-900 dark:text-white-100 mb-4" style="color:white">Bir Projeye Katıl</h3>
                             <form action="{{ route('projects.join') }}" method="POST">
                                 @csrf
                                 <div>
-                                    <x-input-label for="unique_key" :value="__('Benzersiz Proje Kodu')" />
+                                    <x-input-label style="color:white" for="unique_key" :value="__('Benzersiz Proje Kodu')" />
                                     <x-text-input id="unique_key" class="block mt-1 w-full" type="text" name="unique_key" placeholder="Kodu Buraya Girin" required />
                                 </div>
                                 <x-primary-button class="mt-4">
